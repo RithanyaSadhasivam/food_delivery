@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="css/rest.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurants</h1>
+
+        <div class="restaurant" style="background-image: url('https://example.com/italian-bistro.jpg');">
+            <h2>Italian Bistro</h2>
+            <ul>
+                <li>Pasta Primavera - $12.99 
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="order" onclick="location.href='order.html'">Order</button>
+                </li>
+                <li>Margherita Pizza - $10.99 
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="order" onclick="location.href='order.html'">Order</button>
+                </li>
+                <li>Tiramisu - $6.99 
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="order" onclick="location.href='order.html'">Order</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="restaurant" style="background-image: url('https://example.com/sushi-palace.jpg');">
+            <h2>Sushi Palace</h2>
+            <ul>
+                <li>California Roll - $8.99 
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="order" onclick="location.href='order.html'">Order</button>
+                </li>
+                <li>Spicy Tuna Roll - $10.99 
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="order" onclick="location.href='order.html'">Order</button>
+                </li>
+                <li>Miso Soup - $3.99 
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="order" onclick="location.href='order.html'">Order</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="restaurant" style="background-image: url('https://example.com/indian-spice.jpg');">
+            <h2>Indian Spice</h2>
+            <ul>
+                <li>Butter Chicken - $14.99 
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="order" onclick="location.href='order.html'">Order</button>
+                </li>
+                <li>Paneer Tikka - $11.99 
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="order" onclick="location.href='order.html'">Order</button>
+                </li>
+                <li>Naan - $2.99 
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="order" onclick="location.href='order.html'">Order</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="restaurant" style="background-image: url('https://example.com/mexican-fiesta.jpg');">
+            <h2>Mexican Fiesta</h2>
+            <ul>
+                <li>Tacos - $9.99 
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="order" onclick="location.href='order.html'">Order</button>
+                </li>
+                <li>Churros - $5.99 
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="order" onclick="location.href='order.html'">Order</button>
+                </li>
+                <li>Guacamole - $4.99 
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="order" onclick="location.href='order.html'">Order</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">Added to Cart!</div>
+
+    <script>
+        function addToCart() {
+            document.getElementById('popup').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('popup').style.display = 'none';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
